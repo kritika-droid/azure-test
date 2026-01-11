@@ -3,5 +3,5 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-def home():
-    return {"message": "FastAPI is running on Azure"}
+def read_root():
+    return {"status": "FastAPI running on Azure"}
